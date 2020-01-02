@@ -1,0 +1,230 @@
+
+@include media-4k {
+  body {
+    .nav {
+      min-height: 6vh;
+    }
+    main {
+      .site-title {
+        height: 90vh;
+        .site-backgound {
+          margin-top: 11rem;
+        }
+      }
+      .blog {
+        height: 100vh;
+      }
+      .container {
+        margin-top: -40vh;
+        width: 60%;
+      }
+    }
+    .footer {
+      .container {
+        width: 65%;
+      }
+      .move-up {
+        right: 30%;
+      }
+    }
+  }
+}
+
+@include media-lg {
+  body {
+    .site-title {
+      height: 80vh;
+    }
+    .blog {
+      height: 90vh;
+    }
+    .container {
+      .site-content {
+        .post-content {
+          .post-image {
+            .post-info {
+              left: 2rem;
+              bottom: 1.2rem;
+              border-radius: 0;
+              padding: 0.6rem;
+            }
+          }
+        }
+        .sidebar {
+          .popular-posts {
+            .post-content {
+              .post-image {
+                .post-info {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      .container {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+  }
+}
+
+@include media-md {
+  body {
+    .nav {
+      .nav-menu {
+        .nav-items {
+        .nav-link {
+          font-size: 1.2rem;
+          padding: 1.2rem 1rem;
+        }
+      }
+      }
+    }
+    main {
+      .site-title {
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+        .site-backgound {
+          padding-top: 12rem;
+        }
+      }
+    }
+    .blog {
+      height: 90vh;
+    }
+    .site-title {
+      height: 60vh;
+      .site-backgound {
+        padding-top: 7rem;
+      }
+    }
+    .container {
+      width: 95%;
+      .site-content {
+        grid-template-columns: 60% 40%;
+      }
+    }
+  }
+}
+
+@include media-sm {
+  body {
+    .nav {
+      .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        .nav-items {
+          flex-direction: column;
+          margin-left: 2.5rem;
+        }
+        .toggle-collapse {
+          display: initial;
+        }
+      }
+    }
+    main {
+      .site-title {
+        height: 80vh;
+      }
+    }
+    .blog {
+      margin-top: 0.9rem;
+      height: 70vh;
+    }
+    .container {
+      width: 90%;
+      .site-content {
+        grid-template-columns: 100%;
+        .sidebar {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+    .footer {
+      .container {
+        grid-template-columns: repeat(1,1fr);
+      }
+      .move-up {
+        top: 2%;
+      }
+    }
+  }
+}
+
+
+@include media-xs {
+  body {
+    .nav {
+      padding:0 1rem;
+    }
+    main {
+      .site-title {
+        .site-backgound {
+          h1 {
+            width: 80%;
+            font-size: 2rem;
+            text-align: center;
+          }
+        }
+      }
+      .blog {
+      }
+      .container {
+        .site-content {
+          grid-template-columns: repeat(auto-fill, 100%);
+          .post-content {
+            .post-image {
+              .post-info {
+                display: none;
+              }
+            }
+          }
+          .sidebar {
+            width: 90%;
+            .popular-posts {
+              .post-content {
+                padding: 1rem 0rem;
+              }
+            }
+            .newsletter {
+              .form-element {
+                padding: 0.5rem 0;
+                .form-btn {
+                  padding: 0.8rem 0;
+                }
+              }
+            }
+            .popular-tags {
+              .tags {
+                .tag {
+                  font-size: 0.9rem;
+                  padding: 0.4rem 1.1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      .container {
+        grid-template-columns: repeat(auto-fill, 100%);
+        div {
+          padding: 1rem .9rem;
+        }
+      }
+      .rights {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 1 1.4rem;
+      }
+      
+    }
+  }
+}

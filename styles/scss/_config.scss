@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // overflow: hidden;
+}
+
+/* --------Media Mixins-------- */
+@mixin media-xs {
+    @media screen and (max-width: 567px) {
+        @content;
+    }
+}
+@mixin media-sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin media-md {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (max-width: 1199px) {
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+@mixin media-4k {
+    @media screen and (min-width: 2000px) {
+        @content;
+    }
+}
+
+/* -----------Variables---------- */
+$Abel: Abel, cursive;
+$Josefin: Josefine, cursive;
+$Anton: Anton, cursive;
+$Lexend: Lexend, cursive;
+$Livvic: Livvic, cursive;
+
+$text-grey: #3f4954;
+$text-light: #686666da;
+$bg-color: #0f0f0f;
+$white: #fff;
+$midnight: #104f55;
+$icon-hover: #a1c4cf;
+
+$sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+/* ------------Global Classes---------- */
+
+a {
+  text-decoration: none;
+  color: $text-grey;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  .collapse {
+    height: 30rem;
+  }
+}
+
+h1 {
+  font-family: $Lexend;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: $Lexend;
+}
+
+h3 {
+  font-family: $Abel;
+  font-size: 1.3rem;
+}
+
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: $Livvic;
+  cursor: pointer;
+}
+
+span {
+  font-family: $Abel;
+}
+
+.text-grey {
+  color: $text-grey;
+}
+
+p {
+  font-family: $Lexend;
+  color: $text-light;
+}
