@@ -161,10 +161,12 @@
   body {
     .nav {
       padding:0 1rem;
+      min-height: 4rem;
     }
     main {
       .site-title {
         .site-backgound {
+          padding-top: 6rem;
           h1 {
             width: 80%;
             font-size: 2rem;

@@ -225,6 +225,10 @@ p {
 @media screen and (max-width: 567px) {
   body .nav {
     padding: 0 1rem;
+    min-height: 4rem;
+  }
+  body main .site-title .site-backgound {
+    padding-top: 6rem;
   }
   body main .site-title .site-backgound h1 {
     width: 80%;
