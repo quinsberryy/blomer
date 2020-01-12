@@ -235,6 +235,9 @@ p {
     font-size: 2rem;
     text-align: center;
   }
+  body main .blog {
+    height: 100vh;
+  }
   body main .container .site-content {
     -ms-grid-columns: (100%)[auto-fill];
         grid-template-columns: repeat(auto-fill, 100%);
