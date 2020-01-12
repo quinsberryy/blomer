@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/styles/css"
+    }
+  ],
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+}
